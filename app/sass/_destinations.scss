@@ -1,0 +1,37 @@
+.destinations {
+  overflow-x: hidden;
+  padding: 96px 0 100px;
+  
+  &__row {
+  display: flex;
+  column-gap: 50px;
+}
+
+&__content {
+  max-width: 456px;
+}
+
+&__slider {
+  width: 1110px;
+  flex-shrink: 0;
+}
+
+&__title {
+  margin-bottom: 15px;
+  font-size: 55px;
+  font-weight: 600;
+
+    & span {
+      font-size: 30px;
+   }
+}
+
+  &__text {
+    margin-bottom: 60px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.52;
+    color: var(--secondary);
+  }
+}
+
