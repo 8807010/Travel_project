@@ -78,8 +78,38 @@ h6 {
   font-weight: inherit;
 }
 
+:root {
+  --container-width: 1270px;
+  --container-padding: 15px;
+  --secondary: rgba(15, 31, 28, 0.5);
+  --orange: #ff7c4e;
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
-  color: #000000;
-  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f6f6f6;
+  color: #0f1f1c;
+}
+
+.none {
+  display: none !important;
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+}
+
+.container-right {
+  padding-left: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+}
+
+.container-left {
+  padding-right: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+}
+
+.block {
+  height: 200px;
+  background-color: darkseagreen;
 }
