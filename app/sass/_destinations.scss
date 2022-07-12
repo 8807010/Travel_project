@@ -1,31 +1,31 @@
 .destinations {
   overflow-x: hidden;
   padding: 96px 0 100px;
-  
+
   &__row {
-  display: flex;
-  column-gap: 50px;
-}
+    display: flex;
+    column-gap: 50px;
+  }
 
-&__content {
-  max-width: 456px;
-}
+  &__content {
+    max-width: 456px;
+  }
 
-&__slider {
-  width: 1110px;
-  flex-shrink: 0;
-}
+  &__slider {
+    width: 1110px;
+    flex-shrink: 0;
+  }
 
-&__title {
-  margin-bottom: 15px;
-  font-size: 55px;
-  font-weight: 600;
-  line-height: 1.2;
+  &__title {
+    margin-bottom: 15px;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 1.2;
 
     & span {
       font-size: 30px;
-   }
-}
+    }
+  }
 
   &__text {
     margin-bottom: 60px;
@@ -35,4 +35,3 @@
     color: var(--secondary);
   }
 }
-
