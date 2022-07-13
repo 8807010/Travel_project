@@ -13,6 +13,10 @@
     font-weight: 500;
   }
 
+  &__toggle {
+    display: none;
+  }
+
   &__list {
     display: flex;
     column-gap: 80px;
