@@ -161,3 +161,17 @@
     border-radius: 100px;
   }
 }
+
+@media (max-width: 460px) {
+  .nav--mobile {
+    & .nav__toggle {
+      top: 20px;
+      right: 15px;
+    }
+
+    & .nav__list,
+    & .nav__login {
+      row-gap: 20px;
+    }
+  }
+}
