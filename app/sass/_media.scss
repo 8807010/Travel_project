@@ -281,6 +281,25 @@
     padding: 20px 15px;
     border-radius: 40px;
   }
+
+  .subscribe {
+    padding: 25px 0 30px;
+  }
+
+  .subscribe__title {
+    margin-bottom: 30px;
+    font-size: 35px;
+  }
+
+  .subscribe-form {
+    padding: 10px 10px 10px 20px;
+    border-radius: 25px;
+    column-gap: 10px;
+  }
+
+  .subscribe-form__input {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -294,6 +313,20 @@
   .customers__img img {
     max-width: 100%;
   }
+
+  .subscribe-form {
+		padding: 10px;
+		flex-direction: column;
+		row-gap: 10px;
+	}
+
+	.subscribe-form__input {
+		padding: 15px 0;
+		text-align: center;
+		background-color: #f0f0f0;
+		border-radius: 20px;
+		font-size: 18px;
+	}
 
   .nav--mobile {
     & .nav__toggle {
