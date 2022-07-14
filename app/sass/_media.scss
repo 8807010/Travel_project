@@ -216,9 +216,65 @@
     font-weight: 500;
     border-radius: 100px;
   }
+  .customers {
+    padding: 50px 0 60px;
+  }
+
+  .customers__row {
+    column-gap: 30px;
+  }
+
+  .customers__title {
+    margin-bottom: 25px;
+    font-size: 35px;
+  }
+
+  .review__client {
+		column-gap: 30px;
+		margin-bottom: 20px;
+	}
+
+	.review__client-avatar {
+		width: 80px;
+		height: 80px; 
+	}
+
+	.review__client-desc-name {
+		margin-bottom: 5px;
+		font-size: 23px;
+	}
+
+	.review__client-desc-country {
+		font-size: 18px;
+	}
+
+	.review__text {
+		margin-bottom: 20px;
+		font-size: 18px;
+	}
+
+	.review__rating {
+		max-width: 200px;
+	}
+
+  .customers__img img {
+    max-width: 250px;
+    border-radius: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .customers__row {
+    flex-direction: column-reverse;
+    row-gap: 30px;
+  }
 }
 
 @media (max-width: 460px) {
+  .customers__img img {
+    max-width: 100%;
+  }
+
   .nav--mobile {
     & .nav__toggle {
       top: 20px;
