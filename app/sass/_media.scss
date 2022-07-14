@@ -230,35 +230,55 @@
   }
 
   .review__client {
-		column-gap: 30px;
-		margin-bottom: 20px;
-	}
+    column-gap: 30px;
+    margin-bottom: 20px;
+  }
 
-	.review__client-avatar {
-		width: 80px;
-		height: 80px; 
-	}
+  .review__client-avatar {
+    width: 80px;
+    height: 80px;
+  }
 
-	.review__client-desc-name {
-		margin-bottom: 5px;
-		font-size: 23px;
-	}
+  .review__client-desc-name {
+    margin-bottom: 5px;
+    font-size: 23px;
+  }
 
-	.review__client-desc-country {
-		font-size: 18px;
-	}
+  .review__client-desc-country {
+    font-size: 18px;
+  }
 
-	.review__text {
-		margin-bottom: 20px;
-		font-size: 18px;
-	}
+  .review__text {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
 
-	.review__rating {
-		max-width: 200px;
-	}
+  .review__rating {
+    max-width: 200px;
+  }
 
   .customers__img img {
     max-width: 250px;
+    border-radius: 40px;
+  }
+
+  .cta {
+    padding: 0;
+  }
+
+  .cta__title {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .cta__text {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  .cta__plate {
+    min-height: 380px;
+    padding: 20px 15px;
     border-radius: 40px;
   }
 }
