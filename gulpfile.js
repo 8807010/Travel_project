@@ -112,12 +112,3 @@ export { js, sass, imagemin, deploy, rsync, clearcache }
 export let build = series(removedist, imagemin, js, sass, buildcopy)
 
 export default series(js, sass, parallel(browsersync, startwatch))
-
-
-const gulp = require('gulp');
-const ghPages = require('gulp-gh-pages');
-
-gulp.task('deploy', function () {
-  return gulp.src('./dist/**/*')
-    .pipe(ghPages());
-});

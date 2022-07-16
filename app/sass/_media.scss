@@ -17,82 +17,82 @@
 @media (max-width: 1000px) {
   .nav {
     column-gap: 50px;
-  }
 
-  &__list {
-    column-gap: 50px;
+    &__list {
+      column-gap: 50px;
 
-    &--header {
+      &--header {
+        display: none;
+      }
+    }
+
+    &__login--header {
       display: none;
     }
-  }
 
-  &__login--header {
-    display: none;
-  }
+    &__toggle {
+      display: block;
+    }
 
-  &__toggle {
-    display: block;
+    &--mobile {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 99;
+
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+
+      background: linear-gradient(209deg, #428e5f -17.38%, #112120 78.4%), #204434;
+
+      & .logo {
+        font-size: 34px;
+      }
+
+      & .nav__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+
+        font-size: 22px;
+      }
+
+      & .nav__list a.active::after,
+      & .nav__list a:hover::after {
+        display: none;
+      }
+
+      & .nav__login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+
+        font-size: 22px;
+      }
+
+      & .nav__toggle {
+        position: fixed;
+        top: 50px;
+        right: 50px;
+      }
+    }
   }
 
   .no-scroll {
     overflow-y: hidden;
   }
 
-  &--mobile {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 99;
-
-    flex-direction: column;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-
-    background: linear-gradient(209deg, #428e5f -17.38%, #112120 78.4%), #204434;
-
-    & .logo {
-      font-size: 34px;
-    }
-
-    & .nav__list {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      row-gap: 40px;
-
-      font-size: 22px;
-    }
-
-    & .nav__list a.active::after,
-    & .nav__list a:hover::after {
-      display: none;
-    }
-
-    & .nav__login {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      row-gap: 40px;
-
-      font-size: 22px;
-    }
-
-    & .nav__toggle {
-      position: fixed;
-      top: 50px;
-      right: 50px;
-    }
-  }
-
-  &__img img {
+  .header__img img {
     right: -256px;
   }
 
-  &__img::after {
+  .header__img::after {
     right: -300px;
   }
 
@@ -323,7 +323,7 @@
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 480px) {
   .customers__img img {
     max-width: 100%;
   }
