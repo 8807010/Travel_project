@@ -21,19 +21,19 @@
       width: 63px;
       height: 83px;
 
-      content: '';
+      content: "";
     }
 
     &::before {
       left: 74px;
       bottom: 56px;
-      background-image: url('./../img/cta/cta-el-01.svg');
+      background-image: url("./../img/cta/cta-el-01.svg");
     }
 
     &::after {
       top: 74px;
       right: 80px;
-      background-image: url('./../img/cta/cta-el-02.svg');
+      background-image: url("./../img/cta/cta-el-02.svg");
     }
   }
 

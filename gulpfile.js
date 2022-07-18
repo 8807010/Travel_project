@@ -333,3 +333,13 @@ exports.build = series(toProd, clean, htmlInclude, scripts, styles, resources, i
 exports.cache = series(cache, rewrite);
 
 exports.zip = zipFiles;
+
+
+
+const gulp = require('gulp');
+const ghPages = require('gulp-gh-pages');
+
+gulp.task('deploy', function() {
+  return gulp.src('./app/**/*')
+    .pipe(ghPages());
+});
